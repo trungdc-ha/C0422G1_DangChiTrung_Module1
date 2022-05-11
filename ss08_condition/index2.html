@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*Cho nguoi dung nhap diem thi
+        * Neu diem thi >= 75
+        *   1. Và tỉ lệ vắng nghỉ >= 20 thì nói chuyen vơi coach
+        *   2. va ti lẹ vắng nghỉ < 20 thì pass*/
+        let point = parseInt(prompt("input point: "));
+        let absent = parseInt(prompt("input absent: "))
+        if(point >= 75){
+            if(absent >= 20){
+                alert("di noi chuyen voi coach..");
+            }else {
+                alert("Pass");
+            }
+        } else {
+            alert("Fail");
+        }
+    </script>
+</body>
+</html>

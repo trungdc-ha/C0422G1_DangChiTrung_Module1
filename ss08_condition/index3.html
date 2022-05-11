@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Cho phep nguoi dung nhap diem trung binh - dtb
+    * neu dtb >= 9 thong bao xuat sac
+    * 7 <= dtb < 9 thong bao tot
+    * 6 <= dtb < 7 thong bao trung binh
+    * <6 yeu
+    * */
+    let average = prompt("Input average: ");
+    if(average >= 9){
+        document.write("Excellent.")
+    } else if (average >= 7){
+        document.write("Good.")
+    } else if (average >= 6){
+        document.write("Average.")
+    } else {
+        document.write("Blow.")
+    }
+</script>
+</body>
+</html>

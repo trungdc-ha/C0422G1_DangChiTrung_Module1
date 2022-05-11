@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        * Nhập một số từ 1 đến 7
+        * nhập 1 ==> thông báo chủ nhật
+        * 2 ==> thứ 2
+        * 3 ==> thứ 3
+        * ..
+        * 7 ==> thứ 7
+        * Nhập số không hợp lệ ==> thông báo lỗi
+        * */
+        // let number = parseInt(prompt("input number: "))
+        let number = prompt("input number: ");
+        switch (number) { //so sánh ===
+            case "1": document.write("Chu nhat"); break;
+            case "2": document.write("thu 2"); break;
+            case "3": document.write("thu 3"); break;
+            case 4: document.write("thu 4"); break;
+            case 5: document.write("thu 5"); break;
+            case 6: document.write("thu 6"); break;
+            case 7: document.write("thu 7"); break;
+            default: document.write("so vua nhap khong dung.");
+        }
+    </script>
+</body>
+</html>
