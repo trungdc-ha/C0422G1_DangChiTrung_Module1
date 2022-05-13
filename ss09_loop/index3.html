@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        * Mẹ bạn Sơn cho bạn 10 đồng
+        * Yêu cầu Sơn đi siêu thị mua hàng hóa
+        * Mô phỏng lại quá trình đi mua hàng của Sơn
+        * Điều kiện: chỉ mua được hàng khi Sơn còn tiền
+        * */
+        // Xác định vấn đề cần lặp
+        // Lặp bao nhiêu lần
+        // Điều kiện lặp là gì
+        let money = 10;
+        while (money > 0){
+            let product = prompt("Sơn muốn mua gì ?");
+            if(product == "sung"){
+                document.write("Bao công an.");
+                break;
+            }
+            if(product == "dau") {
+                alert("Sieu thi het hang, bạn mua món khác.")
+                continue
+            }
+            let price  = parseInt(prompt("Nhap giá sản phẩm: "));
+            if(price <= money){
+                money = money - price;
+                document.write("Sơn đã mua được " + product + " với giá: " + price + "<br>")
+            }
+        }
+    </script>
+</body>
+</html>
