@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = ["c", "2", "1", "g", "1"];
+    /*for*/
+    // for(let index = 0; index < arr.length; index++){
+    //     document.write(arr[index] + "<br>");
+    // }
+
+    /*while*/
+    // let i = 0;
+    // while (i < arr.length) {
+    //     document.write(arr[i] + "<br>");
+    //     i++;
+    // }
+
+    /*do-while*/
+    // let i = 11;
+    // do {
+    //     document.write(arr[i] + "<br>");
+    //     i++; //12
+    // } while (i < arr.length);
+
+    /*
+    Vấn đề lặp: nhập lại + thông báo
+    Số lần lặp : Ko xác định
+    Có lặp ít nhất 1 lần ko ?
+
+     */
+    let flg = true;
+    do {
+        var temp = parseInt(prompt("Nhap nhiet do: "));
+        if(temp < 20){
+            alert("Tang nhiet do");
+        } else if(temp > 100){
+            alert("Giam nhiet do")
+        } else {
+            document.write("OK");
+            flg = false;
+        }
+    // } while (temp < 20 || temp >100)
+    } while (flg)
+</script>
+</body>
+</html>

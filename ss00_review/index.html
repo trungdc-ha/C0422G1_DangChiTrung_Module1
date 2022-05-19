@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // document.write("a" + "<br>");
+        // if("1" == prompt("input number")){
+        //     document.write("b" + "<br>");
+        // }
+        //
+        /*
+        * ax + b = 0
+        *
+        * Vô số nghiệm: a ==0 && b ==0
+        * vô nghiệm: a ==0 && b != 0
+        * Có 1 nghiệm: a !=0
+        *
+        * */
+
+        let a = parseInt(prompt("nhap a: "));
+        let b = parseInt(prompt("nhap b: "));
+        if(a == 0 && b ==0){
+            alert("Phuong trinh vo so nghiem");
+        } else if (a ==0 && b!= 0){
+            alert("Phuong trinh vo nghiem")
+        } else if (a != 0){
+            alert("Phuong trinh co 1 nghiem x = :" + -b/a);
+        }
+
+    </script>
+</body>
+</html>

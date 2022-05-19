@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for (let row = 1; row < 6; row++) { //lặp dòng
+        for (let col = 1; col < 6; col++) { //hiện thị nội dung của dòng
+            if (col <= (5 - row)) {
+                //in khoảng trắng
+                document.write("&ensp;");
+            } else {
+                //in *
+                document.write("*");
+            }
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>
