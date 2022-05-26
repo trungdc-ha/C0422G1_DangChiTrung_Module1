@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let student = {
+            id: "SV001",
+            name: "Hung"
+        }
+
+        function update(x) {
+            // x.name = "No name";
+            x = {
+                id: "SV002",
+                name: "Bao"
+            }
+        }
+
+        update(student);
+        document.write(student.name); //Hung
+    </script>
+</body>
+</html>
